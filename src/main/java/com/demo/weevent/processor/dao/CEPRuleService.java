@@ -1,6 +1,6 @@
-package com.webank.weevent.processor.dao;
+package com.demo.weevent.processor.dao;
 
-import com.webank.weevent.processor.model.CEPRule;
+import com.demo.weevent.processor.model.CEPRule;
 
 public interface CEPRuleService {
     CEPRule selectByPrimaryKey(Integer id);

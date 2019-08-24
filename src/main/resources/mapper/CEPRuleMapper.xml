@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.webank.weevent.processor.mapper.CEPRuleMapper">
-  <resultMap id="BaseResultMap" type="com.webank.weevent.processor.model.CEPRule">
+<mapper namespace="com.demo.weevent.processor.mapper.CEPRuleMapper">
+  <resultMap id="BaseResultMap" type="com.demo.weevent.processor.model.CEPRule">
     <constructor>
       <idArg column="id" javaType="java.lang.Integer" jdbcType="INTEGER" />
       <arg column="rule_trigger_id" javaType="java.lang.Integer" jdbcType="INTEGER" />
@@ -83,7 +83,7 @@
     to_destination, databaseUrl, create_time, error_destination, error_code, error_message, 
     ex_param
   </sql>
-  <select id="selectByExample" parameterType="com.webank.weevent.processor.model.CEPRuleExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.demo.weevent.processor.model.CEPRuleExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -107,13 +107,13 @@
     delete from cep_rule
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.webank.weevent.processor.model.CEPRuleExample">
+  <delete id="deleteByExample" parameterType="com.demo.weevent.processor.model.CEPRuleExample">
     delete from cep_rule
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.webank.weevent.processor.model.CEPRule">
+  <insert id="insert" parameterType="com.demo.weevent.processor.model.CEPRule">
     insert into cep_rule (id, rule_trigger_id, rule_name, 
       from_destination, type, status, 
       condition_type, broker_url, to_destination, 
@@ -127,7 +127,7 @@
       #{errorCode,jdbcType=VARCHAR}, #{errorMessage,jdbcType=VARCHAR}, #{exParam,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.webank.weevent.processor.model.CEPRule">
+  <insert id="insertSelective" parameterType="com.demo.weevent.processor.model.CEPRule">
     insert into cep_rule
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -224,7 +224,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.webank.weevent.processor.model.CEPRuleExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.demo.weevent.processor.model.CEPRuleExample" resultType="java.lang.Long">
     select count(*) from cep_rule
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -304,7 +304,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.webank.weevent.processor.model.CEPRule">
+  <update id="updateByPrimaryKeySelective" parameterType="com.demo.weevent.processor.model.CEPRule">
     update cep_rule
     <set>
       <if test="ruleTriggerId != null">
@@ -352,7 +352,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.webank.weevent.processor.model.CEPRule">
+  <update id="updateByPrimaryKey" parameterType="com.demo.weevent.processor.model.CEPRule">
     update cep_rule
     set rule_trigger_id = #{ruleTriggerId,jdbcType=INTEGER},
       rule_name = #{ruleName,jdbcType=VARCHAR},

@@ -1,18 +1,3 @@
-/*
- Navicat Premium Data Transfer
-
- Source Server         : 182.254.159.91
- Source Server Type    : MySQL
- Source Server Version : 50727
- Source Host           : 182.254.159.91:3306
- Source Schema         : cep
-
- Target Server Type    : MySQL
- Target Server Version : 50727
- File Encoding         : 65001
-
- Date: 23/08/2019 19:35:06
-*/
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;

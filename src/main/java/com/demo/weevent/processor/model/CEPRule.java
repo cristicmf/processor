@@ -1,4 +1,4 @@
-package com.webank.weevent.processor.model;
+package com.demo.weevent.processor.model;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package com.webank.weevent.processor.model;
+package com.demo.weevent.processor.model;
 
 public class RuleTrigger {
     private Integer id;

@@ -1,4 +1,4 @@
-package com.webank.weevent.processor;
+package com.demo.weevent.processor;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

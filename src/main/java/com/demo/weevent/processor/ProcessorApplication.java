@@ -1,6 +1,4 @@
-package com.webank.weevent.processor;
-
-
+package com.demo.weevent.processor;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.mybatis.spring.SqlSessionFactoryBean;
@@ -14,7 +12,7 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 
 @SpringBootApplication
-@MapperScan(basePackages = "com.webank.weevent.processor")
+@MapperScan(basePackages = "com.demo.weevent.processor")
 public class ProcessorApplication {
 
     @Bean

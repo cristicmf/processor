@@ -1,7 +1,7 @@
-package com.webank.weevent.processor.mapper;
+package com.demo.weevent.processor.mapper;
 
-import com.webank.weevent.processor.model.RuleTrigger;
-import com.webank.weevent.processor.model.RuleTriggerExample;
+import com.demo.weevent.processor.model.RuleTrigger;
+import com.demo.weevent.processor.model.RuleTriggerExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 

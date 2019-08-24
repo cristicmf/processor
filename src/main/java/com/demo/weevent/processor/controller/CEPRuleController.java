@@ -1,7 +1,7 @@
-package com.webank.weevent.processor.controller;
+package com.demo.weevent.processor.controller;
 
-import com.webank.weevent.processor.model.CEPRule;
-import com.webank.weevent.processor.service.CEPRuleServiceImpl;
+import com.demo.weevent.processor.model.CEPRule;
+import com.demo.weevent.processor.service.CEPRuleServiceImpl;
 
 import com.alibaba.fastjson.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;

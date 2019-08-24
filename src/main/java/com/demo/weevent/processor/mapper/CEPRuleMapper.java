@@ -1,7 +1,7 @@
-package com.webank.weevent.processor.mapper;
+package com.demo.weevent.processor.mapper;
 
-import com.webank.weevent.processor.model.CEPRule;
-import com.webank.weevent.processor.model.CEPRuleExample;
+import com.demo.weevent.processor.model.CEPRule;
+import com.demo.weevent.processor.model.CEPRuleExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;

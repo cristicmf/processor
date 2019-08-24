@@ -1,10 +1,10 @@
-package com.webank.weevent.processor.service;
+package com.demo.weevent.processor.service;
 
 import java.util.List;
 
-import com.webank.weevent.processor.dao.CEPRuleService;
-import com.webank.weevent.processor.mapper.CEPRuleMapper;
-import com.webank.weevent.processor.model.CEPRule;
+import com.demo.weevent.processor.dao.CEPRuleService;
+import com.demo.weevent.processor.mapper.CEPRuleMapper;
+import com.demo.weevent.processor.model.CEPRule;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
